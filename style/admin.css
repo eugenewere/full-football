@@ -1,0 +1,293 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family:monospace;
+
+}
+a{
+	text-decoration: none;
+}
+.sticky_nav{
+	position: fixed;
+	width:100%;
+	height: 100px;
+
+
+}
+.nav{
+	display: flex;
+	justify-content:space-between;
+	background-color: #f2f2f2;
+	box-shadow: 3px 0 5px; 
+	z-index: 99999;	
+}
+.logo{
+	display: flex;
+	margin: 5px 10px;
+	align-items: center;
+}
+.logo i{
+	font-size: 30px;
+}
+.logo p{
+	font-size: 25px;
+	margin-left: 10px;
+	text-transform: uppercase;
+
+}
+.admin_info{
+	display: flex;
+	width: 300px;
+	align-items: center;
+	background-color:;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.admin_info .mail{
+	position: relative;
+	font-size: 30px;
+	margin:19px;
+	padding: 20px;
+
+}
+.fa-envelope{
+	font-size:30px;
+	margin: 0 20px;
+	position: relative;
+}
+.fa-envelope span{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	font-size: 10px;
+	color: white;
+	background-color: green;
+    top:-9px;
+	right: -9px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.fa-user{
+	font-size: 22px;
+	margin-right: 10px;
+	position: relative;
+}
+.fa-user span{
+	position: absolute;	
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	font-size: 10px;
+	color: white;
+	background-color: green;
+    top:-9px;
+	right: -9px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#admin_button{
+	border: none;
+	font-size: 18px;
+	background-color: #f2f2f2;
+	outline: none;
+}
+#admin_button{
+	position: relative;
+}
+.smen{
+	position: absolute;
+	top: 100%;
+	background-color: blue;
+	width: 100px;
+	display:none;	
+}
+.smen a{
+	display: block;
+	color: white;
+	text-align: left;
+	padding:  4px 2px;
+	text-transform:capitalize;
+}
+.nav-button{
+	width:250px;
+	list-style-type: none;
+	position: absolute;
+	top: 30px;
+	right:-10px;
+}
+.nav-button a{
+	padding:8px;
+	border-radius: 10px;
+	text-decoration: none; 
+}
+.nav-button a .fa-user{
+	padding:5px;
+	background-color:silver;
+	border-radius: 50%;
+}
+.nav-button a .fa-caret-down{
+	top: 15px;
+}
+.smenu-i{
+	color: #fff;
+	background: #f2f2f2;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  transition: max-width 0.3s;
+  max-height: 0;
+  max-width:  0;
+  transform:rotateY(90deg);
+  perspective: 100px;
+  border-radius: 10px;
+  transform-origin: left;
+
+}
+.nav-button:target .smenu-i{
+  transform:rotateY(0deg);
+  transition: .3s linear;
+  perspective: 1000px;
+  max-height:100%;
+  max-width: 100%;
+}
+.smenu-i a{
+    display: block;
+  padding: 10px 26px;
+  color: black;
+  font-size: 14px;
+  margin: 4px 0;
+  position: relative;
+  text-transform: capitalize;
+   border-radius: 1px;
+
+}
+.smenu-i a:hover{
+	background-color:green;
+	transition: 1s;
+	color: #fff;
+
+}
+.smenu-i a:before{
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: grey;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+  opacity: 0;
+}
+.smenu-i a:hover:before{
+  opacity: 1;
+}
+/* fixed nav*/
+.left_fixed_nav{
+	display: flex;
+	flex:1;
+	height: 100%;
+	overflow:auto;
+
+}
+.fixednav-left{
+  flex-basis: 30%;
+  height: 100%;
+  
+}/* jhdch*/
+.fixednav-left{
+ 	width: 40%;
+	height: 100%;
+	background-color: ;
+	display: flex;
+	flex-direction:column;
+	overflow: hidden;
+}
+.top-content{
+	margin: 10px 0 20px 10px;	
+	display: flex;
+	align-items: center;
+	align-items: flex-start;
+	
+}
+.top-content #img{
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+
+}
+.top-content #img img{
+	background-position:center;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+}
+#details {
+	margin-left: 29px;
+
+}
+#details p{
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 5px;
+
+}
+#online{
+	position: relative;
+}
+
+#online-button{
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius:50%;
+	background-color: lightgreen;
+	right:-20px;
+}
+.center-items-list{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+}
+.center-items-list ul{
+	list-style-type: none;
+	margin-left:  0;
+	padding-left: 0;
+}
+.center-items-list li{
+	padding:20px 30px;
+	width: 100%;
+	display: block;
+	cursor: pointer;
+	font-size: 22px;
+	color:black;
+}
+.center-items-list li:hover{
+	background-color:green;
+	transition: 1s;
+	color: white;
+
+
+}
+.center-items-list li i{
+
+}
+.right-content{
+	width: 60%;
+	height: 100%;
+	background-color: silver;
+	flex: 1;
+
+}
+
+.right-content{
+	
+	flex-basis:70%;
+	background-color: white;
+	height: 100vh;
+	overflow: auto;
+}
